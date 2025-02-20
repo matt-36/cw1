@@ -1,0 +1,42 @@
+main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00265E;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 500;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.error-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #F04848;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.error-icon::before {
+    content: "X";
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}

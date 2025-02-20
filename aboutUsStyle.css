@@ -1,0 +1,89 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00265E;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.about-us {
+    padding: 40px 20px;
+}
+
+.about-us h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    background-color: #4793EF;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 15px;
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+/* Alternate layout for reversed sections */
+.about-card .reverse {
+    flex-direction: row-reverse;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-card.reverse {
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
